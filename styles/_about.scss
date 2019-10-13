@@ -1,0 +1,42 @@
+
+
+/************ ABOUT ************/
+.aboutContainer {
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 5%;
+}
+
+.btn {
+    max-width: 200px;
+    height: 50px;
+    font-size: 1rem;
+}
+
+.about {
+    
+    font-size: 3rem;
+    font-weight: 700; 
+    color: white;
+    float: left;
+    margin-bottom: 15px;
+    
+
+}
+
+.desc {
+    color: #888;
+    font-size: 1rem;
+    margin-bottom: 50px;
+
+
+}

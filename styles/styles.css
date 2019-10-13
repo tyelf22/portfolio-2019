@@ -1,0 +1,93 @@
+/*********** JUMBOTRON ***********/
+.jumboContainer {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(33, 33, 33, 0.5)), to(rgba(33, 33, 33, 0.8))), url(../images/code.jpg);
+  background: linear-gradient(to right bottom, rgba(33, 33, 33, 0.5), rgba(33, 33, 33, 0.8)), url(../images/code.jpg);
+  background-position: 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.font {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+.name {
+  white-space: nowrap;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.sub {
+  line-height: 25px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/************ ABOUT ************/
+.aboutContainer {
+  background-color: black;
+  font-family: 'Raleway', sans-serif;
+  height: 100vh;
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  padding: 0 5%;
+}
+
+.btn {
+  max-width: 200px;
+  height: 50px;
+  font-size: 1rem;
+}
+
+.about {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  float: left;
+  margin-bottom: 15px;
+}
+
+.desc {
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+/************ MEDIA QUERIES ************/
+@media screen and (min-width: 600px) {
+  .desc {
+    font-size: 1.4rem;
+    max-width: 75%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=styles.css.map */
