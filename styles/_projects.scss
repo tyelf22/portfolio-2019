@@ -1,0 +1,19 @@
+.project {
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        color: blue;
+        width: 200px;
+        height: 200px;
+        background: lightgrey;
+        margin: 10px 5%;
+ 
+        
+    }
+}

@@ -40,7 +40,7 @@
 .aboutContainer {
   background-color: black;
   font-family: 'Raleway', sans-serif;
-  height: 100vh;
+  height: 75vh;
 }
 
 .wrap {
@@ -84,6 +84,29 @@
     font-size: 1.4rem;
     max-width: 75%;
   }
+}
+
+.project .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project .card {
+  color: blue;
+  width: 200px;
+  height: 200px;
+  background: lightgrey;
+  margin: 10px 5%;
 }
 
 * {
