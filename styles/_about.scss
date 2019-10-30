@@ -3,12 +3,12 @@
 /************ ABOUT ************/
 .aboutContainer {
     font-family: 'Raleway', sans-serif;
-    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding: 0 5%;    
+    height: 80vh;  
+    padding: $padding-fix;  
 
 }
 
@@ -46,7 +46,7 @@
     font-size: 1rem;
     margin-bottom: 50px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     line-height: 25px;
     max-width: 800px;
 }
@@ -60,10 +60,9 @@
 ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) {
 
     //CSS
-    
     
     
     
@@ -78,6 +77,10 @@
     
     //CSS
     
+    .aboutContainer {
+        height: 50vh;
+    }
+
     
     
     

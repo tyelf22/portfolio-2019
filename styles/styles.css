@@ -39,6 +39,12 @@
 ##Device = Most of the Smartphones Mobiles (Portrait)
 ##Screen = B/w 320px to 479px
 */
+@media (min-width: 320px) and (max-width: 480px) {
+  .jumboContainer {
+    height: 100vh;
+  }
+}
+
 /* 
 ##Device = Low Resolution Tablets, Mobiles (Landscape)
 ##Screen = B/w 481px to 767px
@@ -80,7 +86,6 @@
 /************ ABOUT ************/
 .aboutContainer {
   font-family: 'Raleway', sans-serif;
-  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,6 +98,7 @@
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  height: 80vh;
   padding: 0 5%;
 }
 
@@ -127,7 +133,7 @@
   font-size: 1rem;
   margin-bottom: 50px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   line-height: 25px;
   max-width: 800px;
 }
@@ -141,6 +147,12 @@
     ##Device = Low Resolution Tablets, Mobiles (Landscape)
     ##Screen = B/w 481px to 767px
     */
+@media (min-width: 481px) {
+  .aboutContainer {
+    height: 50vh;
+  }
+}
+
 /* 
     ##Device = Tablets, Ipads (landscape)
     ##Screen = B/w 768px to 1024px
@@ -170,12 +182,13 @@
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 0 5%;
 }
 
 .project .card {
   color: blue;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   margin: 10px .5%;
   position: relative;
   background: lightgreen;
@@ -224,7 +237,7 @@
     ##Screen = 1281px to higher resolution desktops
     */
 .whatContainer {
-  height: 50vh;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,8 +252,40 @@
       -ms-flex-align: center;
           align-items: center;
   background: #f0f0f0;
+  padding: 0 5%;
 }
 
+/************ MEDIA QUERIES ************/
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+    */
+@media (min-width: 481px) {
+  .whatContainer {
+    height: 50vh;
+  }
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+    */
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+    */
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+    */
+/* 
+    ##Device = Desktops
+    ##Screen = 1281px to higher resolution desktops
+    */
 * {
   margin: 0;
   padding: 0;

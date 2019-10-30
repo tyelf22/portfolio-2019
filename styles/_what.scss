@@ -1,8 +1,94 @@
 .whatContainer {
-    height: 50vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #f0f0f0;
+    padding: $padding-fix;
 }
+
+
+
+/************ MEDIA QUERIES ************/    
+
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) {
+
+    //CSS
+    
+    
+    
+    }
+    
+    /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+    */
+    
+    @media (min-width: 481px) {
+    
+    //CSS
+    .whatContainer {
+        height: 50vh;
+    }
+    
+    
+    }
+    
+       
+    /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+    */
+    
+    @media (min-width: 768px) {
+    
+        //CSS
+        
+    
+    
+    }
+      
+    /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+    */
+    
+    @media (min-width: 1024px) {
+    
+        //CSS
+        
+    
+    }
+    
+    /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+    */
+      
+    @media (min-width: 1280px) {
+    
+        //CSS
+    
+    }
+    
+    
+    
+    /* 
+    ##Device = Desktops
+    ##Screen = 1281px to higher resolution desktops
+    */
+    
+    @media (min-width: 1281px) {
+      
+        //CSS
+      
+      
+        
+    }
