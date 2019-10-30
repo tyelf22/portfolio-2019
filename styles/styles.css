@@ -1,30 +1,169 @@
 /*********** JUMBOTRON ***********/
 .jumboContainer {
   height: 65vh;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(104, 131, 158, 0.5)), to(rgba(104, 131, 158, 0.8))), url(../images/code.jpg);
-  background: linear-gradient(to right bottom, rgba(104, 131, 158, 0.5), rgba(104, 131, 158, 0.8)), url(../images/code.jpg);
-  background-position: 60%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #0b0c10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.jumboContainer .bubbles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.jumboContainer .bubble {
+  position: absolute;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.9;
+  -webkit-animation: flying 10s infinite ease-in;
+          animation: flying 10s infinite ease-in;
+}
+
+.jumboContainer .bubble:nth-child(1) {
+  width: 7px;
+  height: 7px;
+  left: 10%;
+  -webkit-animation-duration: 16s;
+          animation-duration: 16s;
+  background: #66FCF1;
+}
+
+.jumboContainer .bubble:nth-child(2) {
+  width: 6px;
+  height: 6px;
+  left: 20%;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+
+.jumboContainer .bubble:nth-child(3) {
+  width: 16px;
+  height: 16px;
+  left: 35%;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+  background: #66FCF1;
+}
+
+.jumboContainer .bubble:nth-child(4) {
+  width: 5px;
+  height: 5px;
+  left: 50%;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.jumboContainer .bubble:nth-child(5) {
+  width: 2px;
+  height: 2px;
+  left: 55%;
+  -webkit-animation-duration: 35s;
+          animation-duration: 35s;
+  background: #66FCF1;
+}
+
+.jumboContainer .bubble:nth-child(6) {
+  width: 8px;
+  height: 8px;
+  left: 65%;
+  -webkit-animation-duration: 11s;
+          animation-duration: 11s;
+}
+
+.jumboContainer .bubble:nth-child(7) {
+  width: 10px;
+  height: 10px;
+  left: 75%;
+  -webkit-animation-duration: 31s;
+          animation-duration: 31s;
+  background: #66FCF1;
+}
+
+.jumboContainer .bubble:nth-child(8) {
+  width: 12px;
+  height: 12px;
+  left: 80%;
+  -webkit-animation-duration: 22s;
+          animation-duration: 22s;
+}
+
+.jumboContainer .bubble:nth-child(9) {
+  width: 9px;
+  height: 9px;
+  left: 70%;
+  -webkit-animation-duration: 18s;
+          animation-duration: 18s;
+  background: #66FCF1;
+}
+
+.jumboContainer .bubble:nth-child(10) {
+  width: 13px;
+  height: 13px;
+  left: 85%;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+}
+
+@-webkit-keyframes flying {
+  0% {
+    bottom: -100px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  100% {
+    bottom: 1080px;
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+}
+
+@keyframes flying {
+  0% {
+    bottom: -100px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  100% {
+    bottom: 1080px;
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
 }
 
 .name {
   white-space: nowrap;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
-  color: white;
   letter-spacing: 3px;
+  color: white;
 }
 
 .sub {
@@ -123,8 +262,8 @@
   margin-top: -40px;
   margin-bottom: 25px;
   width: 75px;
-  background: #698fb7;
-  border: #698fb7;
+  background: #66FCF1;
+  border: #66FCF1;
   height: 2px;
   margin-left: auto;
   margin-right: auto;
@@ -211,6 +350,18 @@
 
 .project .card #jayBoyce {
   background-image: url(../images/jayBoyceScreenshot.png);
+}
+
+.project .card #pokemon {
+  background-image: url(../images/pokemonScreenshot.png);
+}
+
+.project .card #basketball {
+  background-image: url(../images/basketballScreenshot.png);
+}
+
+.project .card #todo {
+  background-image: url(../images/todoScreenshot.png);
 }
 
 .project .card .cardBottom {
@@ -341,6 +492,37 @@
     ##Device = Desktops
     ##Screen = 1281px to higher resolution desktops
     */
+.contact {
+  height: 35vh;
+  width: 100%;
+  background: #383838;
+  margin-top: 50px;
+}
+
+.contact h1 {
+  color: white;
+  margin-top: 50px;
+}
+
+.footer {
+  height: 80px;
+  width: 100%;
+  background: #313131;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer p {
+  color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
