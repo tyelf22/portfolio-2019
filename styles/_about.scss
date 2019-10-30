@@ -2,41 +2,135 @@
 
 /************ ABOUT ************/
 .aboutContainer {
-    background-color: black;
     font-family: 'Raleway', sans-serif;
-    height: 75vh;
-
-}
-
-.wrap {
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
-    padding: 0 5%;
+    align-content: center;
+    padding: 0 5%;    
+
 }
 
 .btn {
     max-width: 200px;
     height: 50px;
     font-size: 1rem;
+    margin: 0 auto;
+    background-color: #f0f0f0;
 }
 
-.about {
+.headings {
     
-    font-size: 3rem;
-    font-weight: 700; 
-    color: white;
-    float: left;
-    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #848484;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
     
+}
 
+.underline {
+    margin-top: -40px;
+    margin-bottom: 25px;
+    width: 75px;
+    border-color: #698fb7;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .desc {
     color: #888;
     font-size: 1rem;
     margin-bottom: 50px;
-
-
+    margin: 0 auto;
+    text-align: center;
+    line-height: 25px;
+    max-width: 800px;
 }
+
+
+/************ MEDIA QUERIES ************/    
+
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    //CSS
+    
+    
+    
+    
+    }
+    
+    /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+    */
+    
+    @media (min-width: 481px) {
+    
+    //CSS
+    
+    
+    
+    
+    }
+    
+       
+    /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+    */
+    
+    @media (min-width: 768px) {
+    
+        //CSS
+        
+    
+    
+    }
+      
+    /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+    */
+    
+    @media (min-width: 1024px) {
+    
+        //CSS
+        
+    
+    }
+    
+    /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+    */
+      
+    @media (min-width: 1280px) {
+    
+        //CSS
+    
+    }
+    
+    
+    
+    /* 
+    ##Device = Desktops
+    ##Screen = 1281px to higher resolution desktops
+    */
+    
+    @media (min-width: 1281px) {
+      
+        //CSS
+      
+      
+        
+    }

@@ -12,9 +12,11 @@
         color: blue;
         width: 300px;
         height: 300px;
-        background: lightgrey;
         margin: 10px .5%;
         position: relative;
+        background: lightgreen;
+
+
  
         img{
             height: 200px;
@@ -30,4 +32,95 @@
         }
         
     }
+
+    #jayBoyce {
+        background-image: url(../images/code.jpg);
+        background-size: cover;
+    }
 }
+
+
+
+
+/************ MEDIA QUERIES ************/    
+
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    //CSS
+    
+    
+    
+    
+    }
+    
+    /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+    */
+    
+    @media (min-width: 481px) {
+    
+    //CSS
+    
+    
+    
+    
+    }
+    
+       
+    /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+    */
+    
+    @media (min-width: 768px) {
+    
+        //CSS
+        
+    
+    
+    }
+      
+    /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+    */
+    
+    @media (min-width: 1024px) {
+    
+        //CSS
+        
+    
+    }
+    
+    /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+    */
+      
+    @media (min-width: 1280px) {
+    
+        //CSS
+    
+    }
+    
+    
+    
+    /* 
+    ##Device = Desktops
+    ##Screen = 1281px to higher resolution desktops
+    */
+    
+    @media (min-width: 1281px) {
+      
+        //CSS
+      
+      
+        
+    }

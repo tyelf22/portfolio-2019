@@ -1,8 +1,8 @@
 /*********** JUMBOTRON ***********/
 
 .jumboContainer{
-    height: 100vh;
-    background: linear-gradient(to right bottom, rgba(33,33,33,.5), rgba(33,33,33,.8)), url(../images/code.jpg);
+    height: 65vh;
+    background: linear-gradient(to right bottom, rgba(104,131,158,.5), rgba(104,131,158,.8)), url(../images/code.jpg);
     background-position: 60%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,19 +12,108 @@
     text-align: center;
 }
 
-.font {
-    font-family: 'Raleway', sans-serif;
-    color: white;
-}
-
 .name {
     white-space: nowrap;
     font-size: 3rem;
     text-align: center;
+    color: white;
+    letter-spacing: 3px;
 }
 
 .sub {
     line-height: 25px;
     white-space: nowrap;
     text-align: center;
+    color: white;
+}
+
+
+
+/************ MEDIA QUERIES ************/    
+
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+//CSS
+
+
+
+
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) {
+
+//CSS
+
+.jumboContainer {
+    height: 50vh;
+}
+
+
+}
+
+   
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) {
+
+    //CSS
+    .jumboContainer {
+        height: 60vh;
+    }
+
+
+}
+  
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 1024px) {
+
+    //CSS
+    .jumboContainer {
+        height: 80vh;
+    }
+
+}
+
+/* 
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
+  
+@media (min-width: 1280px) {
+
+    //CSS
+
+}
+
+
+
+/* 
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    //CSS
+  
+  
+    
 }

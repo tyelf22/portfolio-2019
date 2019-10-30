@@ -1,11 +1,13 @@
 @import "./jumbo";
 @import "./about";
-@import "./mediaQueries";
 @import "./projects";
+@import "./what";
 
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 100;
 }
 
 
