@@ -1,4 +1,6 @@
 .project {
+    margin-top: 50px;
+
 
     .wrapper {
         display: flex;
@@ -10,34 +12,84 @@
     }
     
     .card {
-        color: blue;
-        width: 400px;
-        height: 400px;
+        
+        width: 450px;
+        height: 100%;
         margin: 10px .5%;
         position: relative;
-        background: lightgreen;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
 
-
- 
-        img{
-            height: 200px;
-            width: 200px;
-            position: absolute;
-            
+        .cardTop {
+            background-size: cover;
+            background-position: top;
+            height: 300px;
+            width: 100%;
+        }
+  
+        #jayBoyce {
+            background-image: url(../images/jayBoyceScreenshot.png);
         }
 
-        .cardSub{
-            position: absolute;
-            bottom: 5px;
-            left: 5px;
+        .cardBottom{
+            color: black;
+            background: white;
+            height: 300px;
+            position: relative;
+
+            h3 {
+                margin-top: 15px;
+                margin-left: 10px;
+                font-size: 30px;
+                font-weight: 400;
+            }
+            
+            p {
+                margin: 0 10px;
+            }
+
+            ul {
+                margin: 5px 30px;
+            }
+
+            li {
+                padding: 5px;
+            }
+            
+            
+            .git {
+                color: black;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                margin: 5px 10px;
+            }
+
+            i:hover {
+                
+                transform: translateY(-3px);
+                
+                
+            }
+
+            .lap {
+                color: black;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                margin: 5px 80px;
+                font-size: 55px;
+            }
+
         }
         
     }
 
-    #jayBoyce {
-        background-image: url(../images/code.jpg);
-        background-size: cover;
-    }
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+
+
 }
 
 

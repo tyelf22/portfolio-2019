@@ -123,7 +123,9 @@
   margin-top: -40px;
   margin-bottom: 25px;
   width: 75px;
-  border-color: #698fb7;
+  background: #698fb7;
+  border: #698fb7;
+  height: 2px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -169,6 +171,10 @@
     ##Device = Desktops
     ##Screen = 1281px to higher resolution desktops
     */
+.project {
+  margin-top: 50px;
+}
+
 .project .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,29 +192,78 @@
 }
 
 .project .card {
-  color: blue;
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 100%;
   margin: 10px .5%;
   position: relative;
-  background: lightgreen;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.project .card img {
-  height: 200px;
-  width: 200px;
-  position: absolute;
-}
-
-.project .card .cardSub {
-  position: absolute;
-  bottom: 5px;
-  left: 5px;
-}
-
-.project #jayBoyce {
-  background-image: url(../images/code.jpg);
+.project .card .cardTop {
   background-size: cover;
+  background-position: top;
+  height: 300px;
+  width: 100%;
+}
+
+.project .card #jayBoyce {
+  background-image: url(../images/jayBoyceScreenshot.png);
+}
+
+.project .card .cardBottom {
+  color: black;
+  background: white;
+  height: 300px;
+  position: relative;
+}
+
+.project .card .cardBottom h3 {
+  margin-top: 15px;
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.project .card .cardBottom p {
+  margin: 0 10px;
+}
+
+.project .card .cardBottom ul {
+  margin: 5px 30px;
+}
+
+.project .card .cardBottom li {
+  padding: 5px;
+}
+
+.project .card .cardBottom .git {
+  color: black;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 5px 10px;
+}
+
+.project .card .cardBottom i:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.project .card .cardBottom .lap {
+  color: black;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 5px 80px;
+  font-size: 55px;
+}
+
+.project .card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 /************ MEDIA QUERIES ************/
