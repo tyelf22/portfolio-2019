@@ -88,6 +88,7 @@
         background: $accentBlue;
     }
 
+
     .bubble:nth-child(8) {
         width: 12px;
         height: 12px;
@@ -109,6 +110,46 @@
         height: 13px;
         left: 85%;
         animation-duration: 30s;
+    }
+
+    .bubble:nth-child(11) {
+        width: 10px;
+        height: 10px;
+        left: 10%;
+        animation-duration: 40s;
+        background: $accentPink;
+    }
+
+    .bubble:nth-child(12) {
+        width: 7px;
+        height: 7px;
+        left: 25%;
+        animation-duration: 15s;
+        background: $accentPink;
+    }
+
+    .bubble:nth-child(13) {
+        width: 2px;
+        height: 2px;
+        left: 50%;
+        animation-duration: 20s;
+        background: $accentPink;
+    }
+
+    .bubble:nth-child(14) {
+        width: 5px;
+        height: 5px;
+        left: 75%;
+        animation-duration: 35s;
+        background: $accentPink;
+    }
+
+    .bubble:nth-child(15) {
+        width: 9px;
+        height: 9px;
+        left: 90%;
+        animation-duration: 32s;
+        background: $accentPink;
     }
 
 
@@ -137,6 +178,7 @@
     text-align: center;
     letter-spacing: 3px;
     color: white;
+    z-index: 3;
 }
 
 .sub {
@@ -144,6 +186,7 @@
     white-space: nowrap;
     text-align: center;
     color: white;
+    z-index: 3;
     
 }
 

@@ -1,3 +1,141 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8vh;
+  background-color: #1f2833;
+}
+
+nav h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 5px;
+}
+
+nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav .nav-links li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+nav .nav-links li a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+nav .burger {
+  cursor: pointer;
+}
+
+nav .burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
+/************ MEDIA QUERIES ************/
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+    */
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  nav .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    width: 50%;
+    background-color: #1f2833;
+    z-index: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  nav .nav-links li {
+    opacity: 0;
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+  nav .nav-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  @-webkit-keyframes navLinkFade {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  .toggle .line1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+            transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -6px);
+            transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+}
+
 /*********** JUMBOTRON ***********/
 .jumboContainer {
   height: 65vh;
@@ -43,7 +181,7 @@
   left: 10%;
   -webkit-animation-duration: 16s;
           animation-duration: 16s;
-  background: #66FCF1;
+  background: #14a098;
 }
 
 .jumboContainer .bubble:nth-child(2) {
@@ -60,7 +198,7 @@
   left: 35%;
   -webkit-animation-duration: 25s;
           animation-duration: 25s;
-  background: #66FCF1;
+  background: #14a098;
 }
 
 .jumboContainer .bubble:nth-child(4) {
@@ -79,7 +217,7 @@
   left: 55%;
   -webkit-animation-duration: 35s;
           animation-duration: 35s;
-  background: #66FCF1;
+  background: #14a098;
 }
 
 .jumboContainer .bubble:nth-child(6) {
@@ -96,7 +234,7 @@
   left: 75%;
   -webkit-animation-duration: 31s;
           animation-duration: 31s;
-  background: #66FCF1;
+  background: #14a098;
 }
 
 .jumboContainer .bubble:nth-child(8) {
@@ -113,7 +251,7 @@
   left: 70%;
   -webkit-animation-duration: 18s;
           animation-duration: 18s;
-  background: #66FCF1;
+  background: #14a098;
 }
 
 .jumboContainer .bubble:nth-child(10) {
@@ -122,6 +260,51 @@
   left: 85%;
   -webkit-animation-duration: 30s;
           animation-duration: 30s;
+}
+
+.jumboContainer .bubble:nth-child(11) {
+  width: 10px;
+  height: 10px;
+  left: 10%;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
+  background: #cb2d6f;
+}
+
+.jumboContainer .bubble:nth-child(12) {
+  width: 7px;
+  height: 7px;
+  left: 25%;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  background: #cb2d6f;
+}
+
+.jumboContainer .bubble:nth-child(13) {
+  width: 2px;
+  height: 2px;
+  left: 50%;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  background: #cb2d6f;
+}
+
+.jumboContainer .bubble:nth-child(14) {
+  width: 5px;
+  height: 5px;
+  left: 75%;
+  -webkit-animation-duration: 35s;
+          animation-duration: 35s;
+  background: #cb2d6f;
+}
+
+.jumboContainer .bubble:nth-child(15) {
+  width: 9px;
+  height: 9px;
+  left: 90%;
+  -webkit-animation-duration: 32s;
+          animation-duration: 32s;
+  background: #cb2d6f;
 }
 
 @-webkit-keyframes flying {
@@ -164,6 +347,7 @@
   text-align: center;
   letter-spacing: 3px;
   color: white;
+  z-index: 3;
 }
 
 .sub {
@@ -171,6 +355,7 @@
   white-space: nowrap;
   text-align: center;
   color: white;
+  z-index: 3;
 }
 
 /************ MEDIA QUERIES ************/
@@ -262,8 +447,8 @@
   margin-top: -40px;
   margin-bottom: 25px;
   width: 75px;
-  background: #66FCF1;
-  border: #66FCF1;
+  background: #14a098;
+  border: #14a098;
   height: 2px;
   margin-left: auto;
   margin-right: auto;
@@ -497,13 +682,78 @@
   width: 100%;
   background: #383838;
   margin-top: 50px;
+  text-align: center;
 }
 
 .contact h1 {
   color: white;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
+.contact p {
+  color: #848484;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #14a098;
+}
+
+.contact .icon {
+  color: white;
+  font-size: 3rem;
+  margin: 20px 20px;
+}
+
+.contact .github:hover {
+  color: black;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.contact .linkedin:hover {
+  color: #0073b0;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.contact .mail:hover {
+  color: #dc4d41;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+/************ MEDIA QUERIES ************/
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+    */
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+    */
+@media (min-width: 768px) {
+  .contact .icon {
+    font-size: 6rem;
+  }
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+    */
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+    */
+/* 
+    ##Device = Desktops
+    ##Screen = 1281px to higher resolution desktops
+    */
 .footer {
   height: 80px;
   width: 100%;
@@ -521,6 +771,10 @@
 
 .footer p {
   color: white;
+}
+
+.footer span {
+  color: #848484;
 }
 
 * {
