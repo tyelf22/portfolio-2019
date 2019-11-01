@@ -1,9 +1,14 @@
+body {
+  overflow-x: hidden;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -17,19 +22,19 @@ nav h4 {
   font-weight: 500;
   color: white;
   letter-spacing: 5px;
+  margin-left: 50px;
 }
 
 nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 nav .nav-links li {
   list-style-type: none;
   padding: 10px;
+  text-transform: uppercase;
 }
 
 nav .nav-links li a {
@@ -41,6 +46,7 @@ nav .nav-links li a {
 
 nav .burger {
   cursor: pointer;
+  margin-right: 50px;
 }
 
 nav .burger div {
@@ -86,8 +92,12 @@ nav .burger div {
   }
   nav .nav-links li {
     opacity: 0;
-    font-size: 24px;
     letter-spacing: 2px;
+    margin-bottom: 90px;
+  }
+  nav .nav-links .underline {
+    background: #14a098;
+    border: #14a098;
   }
   nav .nav-active {
     -webkit-transform: translateX(0%);
@@ -133,6 +143,9 @@ nav .burger div {
 @media screen and (min-width: 768px) {
   .burger {
     display: none;
+  }
+  .nav-links {
+    margin-right: 50px;
   }
 }
 
@@ -375,7 +388,7 @@ nav .burger div {
 */
 @media (min-width: 481px) {
   .jumboContainer {
-    height: 50vh;
+    height: 94vh;
   }
 }
 
@@ -383,22 +396,10 @@ nav .burger div {
 ##Device = Tablets, Ipads (landscape)
 ##Screen = B/w 768px to 1024px
 */
-@media (min-width: 768px) {
-  .jumboContainer {
-    height: 60vh;
-  }
-}
-
 /* 
 ##Device = Tablets, Ipads (portrait)
 ##Screen = B/w 768px to 1024px
 */
-@media (min-width: 1024px) {
-  .jumboContainer {
-    height: 80vh;
-  }
-}
-
 /* 
 ##Device = Laptops, Desktops
 ##Screen = B/w 1025px to 1280px
@@ -422,7 +423,7 @@ nav .burger div {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  height: 80vh;
+  height: 500px;
   padding: 0 5%;
 }
 
@@ -473,12 +474,6 @@ nav .burger div {
     ##Device = Low Resolution Tablets, Mobiles (Landscape)
     ##Screen = B/w 481px to 767px
     */
-@media (min-width: 481px) {
-  .aboutContainer {
-    height: 50vh;
-  }
-}
-
 /* 
     ##Device = Tablets, Ipads (landscape)
     ##Screen = B/w 768px to 1024px
@@ -628,7 +623,7 @@ nav .burger div {
     ##Screen = 1281px to higher resolution desktops
     */
 .whatContainer {
-  height: 80vh;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -655,12 +650,6 @@ nav .burger div {
     ##Device = Low Resolution Tablets, Mobiles (Landscape)
     ##Screen = B/w 481px to 767px
     */
-@media (min-width: 481px) {
-  .whatContainer {
-    height: 50vh;
-  }
-}
-
 /* 
     ##Device = Tablets, Ipads (landscape)
     ##Screen = B/w 768px to 1024px
@@ -678,7 +667,7 @@ nav .burger div {
     ##Screen = 1281px to higher resolution desktops
     */
 .contact {
-  height: 35vh;
+  height: 275px;
   width: 100%;
   background: #383838;
   margin-top: 50px;
@@ -701,7 +690,7 @@ nav .burger div {
 
 .contact .icon {
   color: white;
-  font-size: 3rem;
+  font-size: 4.5rem;
   margin: 20px 20px;
 }
 
@@ -736,12 +725,6 @@ nav .burger div {
     ##Device = Tablets, Ipads (landscape)
     ##Screen = B/w 768px to 1024px
     */
-@media (min-width: 768px) {
-  .contact .icon {
-    font-size: 6rem;
-  }
-}
-
 /* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
@@ -782,9 +765,5 @@ nav .burger div {
   padding: 0;
   font-family: 'Barlow', sans-serif;
   font-weight: 100;
-}
-
-body {
-  overflow-x: hidden;
 }
 /*# sourceMappingURL=styles.css.map */

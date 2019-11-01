@@ -1,6 +1,10 @@
+body {
+    overflow-x: hidden;
+}
+
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     min-height: 8vh;
     background-color: $mainColor;
@@ -11,15 +15,17 @@ nav {
         font-weight: 500;
         color: white;
         letter-spacing: 5px;
+        margin-left: 50px;
     }
 
     .nav-links {
         display: flex;
-        justify-content: space-around; 
 
         li {
             list-style-type: none;
             padding: 10px;
+            text-transform: uppercase;
+            
 
             a {
                 text-decoration: none;
@@ -29,10 +35,12 @@ nav {
             }
         }
 
+
     }
 
     .burger {
         cursor: pointer;
+        margin-right: 50px;
         
     }
 
@@ -85,8 +93,13 @@ nav {
 
                 li {
                     opacity: 0;
-                    font-size: 24px;
                     letter-spacing: 2px;
+                    margin-bottom: 90px;
+                }
+
+                .underline {
+                    background: $accentBlue;
+                    border: $accentBlue;
                 }
 
             }
@@ -130,6 +143,10 @@ nav {
     @media screen and (min-width: 768px) {
         .burger {
             display: none;
+        }
+
+        .nav-links{
+            margin-right: 50px;
         }
     }
       

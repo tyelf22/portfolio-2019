@@ -1,5 +1,5 @@
 .whatContainer {
-    height: 80vh;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,11 +33,7 @@
     
     @media (min-width: 481px) {
     
-    //CSS
-    .whatContainer {
-        height: 50vh;
-    }
-    
+        //CSS
     
     }
     
