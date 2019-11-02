@@ -6,8 +6,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 8vh;
-    background-color: $mainColor;
+    height: 70px;
+    background-color: #313131;
 
     h4{
         font-family: $font;
@@ -32,6 +32,12 @@ nav {
                 color: white;
                 letter-spacing: 3px;
                 font-weight: bold;
+            }
+
+            a:hover{
+                color: $accentBlue;
+                transition: color 0.5s ease;
+                
             }
         }
 
@@ -83,7 +89,7 @@ nav {
                 height: 92vh;
                 top: 8vh;
                 width: 50%;
-                background-color: $mainColor;
+                background-color: #313131;
                 z-index: 4;
                 display: flex;
                 flex-direction: column;
@@ -124,6 +130,7 @@ nav {
 
     .toggle .line1{
         transform: rotate(-45deg) translate(-5px, 6px);
+        transition-duration: 0.5s;
     }
 
     .toggle .line2{
@@ -132,6 +139,7 @@ nav {
 
     .toggle .line3 {
         transform: rotate(45deg) translate(-5px, -6px);
+        transition-duration: 0.5s;
     }
 
 
