@@ -1,7 +1,7 @@
 /*********** JUMBOTRON ***********/
 
 .jumboContainer{
-    height: 65vh;
+    height: 100vh;
     background: #0b0c10;
     display: flex;
     flex-direction: column;
@@ -200,13 +200,11 @@
 ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px){
 
 //CSS
 
-.jumboContainer {
-    height: 100vh;
-}
+
 
 
 }
@@ -220,9 +218,7 @@
 
 //CSS
 
-.jumboContainer {
-    height: 94vh;
-}
+
 
 
 }
@@ -236,7 +232,6 @@
 @media (min-width: 768px) {
 
     //CSS
-
 
 
 }

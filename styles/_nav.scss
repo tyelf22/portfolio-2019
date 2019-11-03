@@ -3,11 +3,15 @@ body {
 }
 
 nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    background-color: #313131;
+    background-color: #0b0c10;
 
     h4{
         font-family: $font;
@@ -20,6 +24,7 @@ nav {
 
     .nav-links {
         display: flex;
+        z-index: 4;
 
         li {
             list-style-type: none;
@@ -47,6 +52,7 @@ nav {
     .burger {
         cursor: pointer;
         margin-right: 50px;
+        z-index: 4;
         
     }
 
@@ -85,10 +91,10 @@ nav {
 
             .nav-links {
                 position: absolute;
-                right: 0px;
-                height: 92vh;
-                top: 8vh;
+                height: 100vh;
                 width: 50%;
+                top: 0;
+                right: 0;
                 background-color: #313131;
                 z-index: 4;
                 display: flex;
@@ -100,7 +106,8 @@ nav {
                 li {
                     opacity: 0;
                     letter-spacing: 2px;
-                    margin-bottom: 90px;
+                    margin-top: 80px;
+                    
                 }
 
                 .underline {

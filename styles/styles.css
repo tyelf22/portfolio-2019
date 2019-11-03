@@ -3,6 +3,10 @@ body {
 }
 
 nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,7 +17,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   height: 70px;
-  background-color: #313131;
+  background-color: #0b0c10;
 }
 
 nav h4 {
@@ -29,6 +33,7 @@ nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 4;
 }
 
 nav .nav-links li {
@@ -53,6 +58,7 @@ nav .nav-links li a:hover {
 nav .burger {
   cursor: pointer;
   margin-right: 50px;
+  z-index: 4;
 }
 
 nav .burger div {
@@ -73,10 +79,10 @@ nav .burger div {
   }
   nav .nav-links {
     position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
+    height: 100vh;
     width: 50%;
+    top: 0;
+    right: 0;
     background-color: #313131;
     z-index: 4;
     display: -webkit-box;
@@ -99,7 +105,7 @@ nav .burger div {
   nav .nav-links li {
     opacity: 0;
     letter-spacing: 2px;
-    margin-bottom: 90px;
+    margin-top: 80px;
   }
   nav .nav-links .underline {
     background: #14a098;
@@ -161,7 +167,7 @@ nav .burger div {
 
 /*********** JUMBOTRON ***********/
 .jumboContainer {
-  height: 65vh;
+  height: 100vh;
   background: #0b0c10;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -386,22 +392,10 @@ nav .burger div {
 ##Device = Most of the Smartphones Mobiles (Portrait)
 ##Screen = B/w 320px to 479px
 */
-@media (min-width: 320px) and (max-width: 480px) {
-  .jumboContainer {
-    height: 100vh;
-  }
-}
-
 /* 
 ##Device = Low Resolution Tablets, Mobiles (Landscape)
 ##Screen = B/w 481px to 767px
 */
-@media (min-width: 481px) {
-  .jumboContainer {
-    height: 94vh;
-  }
-}
-
 /* 
 ##Device = Tablets, Ipads (landscape)
 ##Screen = B/w 768px to 1024px
