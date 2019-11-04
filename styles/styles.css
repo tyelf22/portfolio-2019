@@ -294,7 +294,7 @@ nav .burger div {
   left: 10%;
   -webkit-animation-duration: 40s;
           animation-duration: 40s;
-  background: #cb2d6f;
+  background: #F172a1;
 }
 
 .jumboContainer .bubble:nth-child(12) {
@@ -303,7 +303,7 @@ nav .burger div {
   left: 25%;
   -webkit-animation-duration: 15s;
           animation-duration: 15s;
-  background: #cb2d6f;
+  background: #F172a1;
 }
 
 .jumboContainer .bubble:nth-child(13) {
@@ -312,7 +312,7 @@ nav .burger div {
   left: 50%;
   -webkit-animation-duration: 20s;
           animation-duration: 20s;
-  background: #cb2d6f;
+  background: #F172a1;
 }
 
 .jumboContainer .bubble:nth-child(14) {
@@ -321,7 +321,7 @@ nav .burger div {
   left: 75%;
   -webkit-animation-duration: 35s;
           animation-duration: 35s;
-  background: #cb2d6f;
+  background: #F172a1;
 }
 
 .jumboContainer .bubble:nth-child(15) {
@@ -330,7 +330,7 @@ nav .burger div {
   left: 90%;
   -webkit-animation-duration: 32s;
           animation-duration: 32s;
-  background: #cb2d6f;
+  background: #F172a1;
 }
 
 @-webkit-keyframes flying {
