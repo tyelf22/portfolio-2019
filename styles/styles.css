@@ -20,12 +20,9 @@ nav {
   background-color: #0b0c10;
 }
 
-nav h4 {
-  font-family: "Raleway", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  color: white;
-  letter-spacing: 5px;
+nav img {
+  height: 75px;
+  width: 75px;
   margin-left: 50px;
 }
 
