@@ -1,12 +1,43 @@
 .whatContainer {
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     background: #f0f0f0;
     padding: $padding-fix;
+    
+
+    h1 {
+        padding-top: 90px;
+    }
 }
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    h3{
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+
+    .list {
+        padding-bottom: 90px;
+
+        h3 {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: center;
+            
+        }
+    }
+    
+}
+
+
 
 
 

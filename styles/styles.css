@@ -628,22 +628,47 @@ nav .burger div {
     ##Screen = 1281px to higher resolution desktops
     */
 .whatContainer {
-  height: 500px;
+  text-align: center;
+  background: #f0f0f0;
+  padding: 0 5%;
+}
+
+.whatContainer h1 {
+  padding-top: 90px;
+}
+
+.skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #f0f0f0;
-  padding: 0 5%;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills h3 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.skills .list {
+  padding-bottom: 90px;
+}
+
+.skills .list h3 {
+  text-align: center;
+}
+
+.skills .list ul {
+  list-style-type: none;
+  text-align: center;
 }
 
 /************ MEDIA QUERIES ************/
@@ -770,5 +795,6 @@ nav .burger div {
   padding: 0;
   font-family: 'Barlow', sans-serif;
   font-weight: 100;
+  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=styles.css.map */
