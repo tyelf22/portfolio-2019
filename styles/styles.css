@@ -576,7 +576,7 @@ nav .burger div {
 }
 
 .project .card .cardBottom .git {
-  color: black;
+  color: #14a098;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -589,12 +589,11 @@ nav .burger div {
 }
 
 .project .card .cardBottom .lap {
-  color: black;
+  color: #14a098;
   position: absolute;
   bottom: 0;
   right: 0;
-  margin: 5px 80px;
-  font-size: 55px;
+  margin: 5px 60px;
 }
 
 .project .card:hover {
