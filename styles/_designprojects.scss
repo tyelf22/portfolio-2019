@@ -1,49 +1,33 @@
-.contact {
-    height: 275px;
-    width: 100%;
-    background: #383838; 
-    margin-top: 50px;
-    text-align: center;
-    
 
-    h1 {
-        color: white;
-        padding-top: 50px;
-    }
-
-    p {
-        color: #848484;
-    }
-    a {
-        text-decoration: none;
-        color: $accentBlue;
-    }
-
-    .icon {
-        color: white;
-        font-size: 4.5rem;
-        margin: 20px 20px;
-    }
-
-    .github:hover {
-        color: black;
-        transition: color 0.5s ease;
-    }
-
-    .linkedin:hover {
-        color: #0073b0;
-        transition: color 0.5s ease;
-    }
-
-    .mail {
-        font-size: 4rem;
-    }
-
-    .mail:hover {
-        color: #dc4d41;
-        transition: color 0.5s ease;
-    }
+#designprojects {
+    display: none;
 }
+ 
+    .card {
+        
+  
+        #jayBoyce {
+            background-image: url(../images/jayBoyceScreenshot.png);
+        }
+
+        #pokemon {
+            background-image: url(../images/pokemonScreenshot.png);
+        }
+
+        #basketball {
+            background-image: url(../images/basketballScreenshot.png);
+
+        }
+
+        #todo{
+            background-image: url(../images/todoScreenshot.png);
+
+        }
+
+
+}
+
+
 
 
 /************ MEDIA QUERIES ************/    
@@ -54,9 +38,11 @@
 ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 480px) {
 
     //CSS
+    
+    
     
     
     }
@@ -69,7 +55,8 @@
     @media (min-width: 481px) {
     
     //CSS
-
+    
+    
     
     
     }
@@ -83,7 +70,8 @@
     @media (min-width: 768px) {
     
         //CSS
-
+        
+    
     
     }
       
@@ -95,7 +83,7 @@
     @media (min-width: 1024px) {
     
         //CSS
-
+        
     
     }
     

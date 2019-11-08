@@ -27,5 +27,17 @@ burger.addEventListener('click', () => {
 
 }
 
+navSlide(); //call navslide function
 
-navSlide();
+var codeSection = document.querySelector("#projects"); //declare variable for coding project section
+var styleSection = document.querySelector("#designprojects"); //declare variable for design project section
+
+showCoding = () => {
+    codeSection.style.display = "block" 
+    styleSection.style.display = "none";
+}
+
+showDesign = () => {
+    styleSection.style.display = "block";
+    codeSection.style.display = "none" 
+}
