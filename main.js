@@ -29,15 +29,28 @@ burger.addEventListener('click', () => {
 
 navSlide(); //call navslide function
 
+
+
 var codeSection = document.querySelector("#projects"); //declare variable for coding project section
 var styleSection = document.querySelector("#designprojects"); //declare variable for design project section
+var codeBtn = document.querySelector("#codingbtn");
+var designBtn = document.querySelector("#designbtn");
 
 showCoding = () => {
     codeSection.style.display = "block" 
     styleSection.style.display = "none";
+    designBtn.style.background = "white"
+    designBtn.style.color = "#14a098"
+    codeBtn.style.background = "#14a098";
+    codeBtn.style.color = "white"
 }
 
 showDesign = () => {
     styleSection.style.display = "block";
-    codeSection.style.display = "none" 
+    codeSection.style.display = "none";
+    designBtn.style.background = "#14a098"
+    designBtn.style.color = "white"
+    codeBtn.style.background = "white";
+    codeBtn.style.color = "#14a098"
+
 }

@@ -1,9 +1,38 @@
-button {
-    
+.buttonStyling {
+    display: flex;
+    justify-content: center;
+
+    button {
+        margin: 20px 20px 0 20px;
+        padding: 10px;
+        font-family: $font;
+        background: white;
+        color: $accentBlue;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: 1px solid $accentBlue;
+        outline: none;
+
+    }
+
+
+    button:hover {
+        color: white;
+        background: $accentBlue;
+        transition: background 1s ease;
+        cursor: pointer;
+    }
+
+    #codingbtn {
+        background: $accentBlue;
+        color: white;
+    }
+
+
 }
 
 .project {
-    margin-top: 50px;
+    margin-top: 10px;
 
 
     .wrapper {
@@ -54,6 +83,7 @@ button {
             background: white;
             height: 300px;
             position: relative;
+            border-top: 2px solid $accentBlue;
 
             h3 {
                 margin-top: 15px;
@@ -80,7 +110,7 @@ button {
                 position: absolute;
                 bottom: 0;
                 right: 0;
-                margin: 5px 10px;
+                margin: 5px 60px;
             }
 
             i:hover {
@@ -95,7 +125,7 @@ button {
                 position: absolute;
                 bottom: 0;
                 right: 0;
-                margin: 5px 60px;
+                margin: 5px 10px;
             }
 
         }

@@ -22,7 +22,7 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#scrollProjects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
   
@@ -64,15 +64,15 @@
         code with a clean UI. 
         <br> <br>
         The web developement and design program at UVU has been the perfect mix of writing code while still expressing
-        my design abilities. I first started taking classes in the computer science and IT fields but I wasn't passionate 
-        enough about these. That's when I found the digital media department where it was the perfect mix of technology 
+        my design abilities. I first started taking classes in computer science and IT fields but I wasn't passionate 
+        enough about these. That's when I found the digital media department where it was the perfect mix of code and design 
         for me.
         <br> <br>
         My education goals are to continue to learn new technologies here at UVU. I have had a lot of focus on creating 
         stunning front end designs. In order to acheive a full stack status I am wanting and going to be learning more about
         the backend. 
         <br> <br>
-        My short term career goal is to start out as a jr developer where I can work with people to help faciliate my learning
+        My short term career goal is to start out as a jr. developer where I can work with people to help faciliate my learning
         and push me to grow as a programmer. Long term I would like to become a freelance developer and provide clients with websites
         that will grow their business.
 
@@ -124,10 +124,13 @@
     </div>
 
     <!--Projects-->
-    <h1 class="headings">Some Projects</h1>
+    
+    <h1 class="headings" id="scrollProjects">Some Projects</h1>
     <hr class="underline">
-    <button id="codingbtn" onclick="showCoding()">Coding Projects</button>
-    <button id="designbtn" onclick="showDesign()">Design Projects</button>
+    <div class="buttonStyling">
+        <button id="codingbtn" onclick="showCoding()">Coding Projects</button>
+        <button id="designbtn" onclick="showDesign()">Design Projects</button>
+    </div>
     <div class="project" id="projects">
       <div class="wrapper">
           <div class="card">
@@ -203,66 +206,42 @@
     <div class="project" id="designprojects">
         <div class="wrapper">
             <div class="card">
-                <div class="cardTop" id="">
+                <div class="cardTop" id="ftr">
                 </div>
                 <div class="cardBottom">
-                    <h3>Jay Boyce Website</h3>
-                    <p>Designed and developed landing page for local author</p>
-                    <ul>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>Javascript</li>
-                      <li>Responsive Design</li>
-                    </ul>
-                    <a href="https://github.com/tyelf22/jay-boyce.git" target="_blank"><i class="fa fa-git-square fa-3x git"></i></a>
+                    <h3>Fit To Recover Redesign</h3>
+                    <p>Redesigned the website of a local non-profit company</p>
+
                     <a href="https://jayboyce.netlify.com" target="_blank"><i class="fa fa-external-link-square fa-3x lap"></i></a>
                 </div>
             </div>
             <div class="card">
-              <div class="cardTop" id="">
+              <div class="cardTop" id="hiking">
                 </div>
                 <div class="cardBottom">
-                    <h3>Pokemon Cards</h3>
-                    <p>Generated Pokemon cards using the Poke API</p>
-                    <ul>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>Javascript</li>
-                      <li>Responsive Design</li>
-                      <li>Poki Api</li>
-                    </ul>
-                    <a href="https://github.com/tyelf22/pokemonCards.git" target="_blank"><i class="fa fa-git-square fa-3x git"></i></a>
+                    <h3>Ultimate Hiking Guide</h3>
+                    <p>Project to demonstrate best image file types for the web</p>
+
                     <a href="https://trusting-poincare-88a956.netlify.com" target="_blank"><i class="fa fa-external-link-square fa-3x lap"></i></a>
                 </div>
               </div>
             <div class="card">
-                <div class="cardTop" id="">
+                <div class="cardTop" id="media">
                 </div>
                 <div class="cardBottom">
-                    <h3>Vue Basketball Game</h3>
-                    <p>Simple basketball game using front end framework VueJS</p>
-                    <ul>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>Javascript</li>
-                      <li>VueJS</li>
-                    </ul>
-                    <a href="https://github.com/tyelf22/tyson-monster-project.git" target="_blank"><i class="fa fa-git-square fa-3x git"></i></a>
+                    <h3>Media Output Project</h3>
+                    <p>Created documentation for exporting image, video, and audio for the web</p>
+
                     <a href="https://gracious-aryabhata-7a2314.netlify.com" target="_blank"><i class="fa fa-external-link-square fa-3x lap"></i></a>
                 </div>
             </div> 
             <div class="card">
-                <div class="cardTop" id="">
+                <div class="cardTop" id="agt">
                 </div>
                 <div class="cardBottom">
-                    <h3>Javascript To Do's</h3>
-                    <p>Vanilla javascript to-do list</p>
-                    <ul>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>Javascript</li>
-                    </ul>
-                    <a href="https://github.com/tyelf22/dgm1600-todo.git" target="_blank"><i class="fa fa-git-square fa-3x git"></i></a>
+                    <h3>America's Got Talent Deliverable</h3>
+                    <p>Created a deliverable that documents the past AGT winners</p>
+
                     <a href="https://tender-mcclintock-ca3cd0.netlify.com" target="_blank"><i class="fa fa-external-link-square fa-3x lap"></i></a>
                 </div>
             </div> 

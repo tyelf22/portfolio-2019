@@ -496,8 +496,42 @@ nav .burger div {
     ##Device = Desktops
     ##Screen = 1281px to higher resolution desktops
     */
+.buttonStyling {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttonStyling button {
+  margin: 20px 20px 0 20px;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  background: white;
+  color: #14a098;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #14a098;
+  outline: none;
+}
+
+.buttonStyling button:hover {
+  color: white;
+  background: #14a098;
+  -webkit-transition: background 1s ease;
+  transition: background 1s ease;
+  cursor: pointer;
+}
+
+.buttonStyling #codingbtn {
+  background: #14a098;
+  color: white;
+}
+
 .project {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .project .wrapper {
@@ -555,6 +589,7 @@ nav .burger div {
   background: white;
   height: 300px;
   position: relative;
+  border-top: 2px solid #14a098;
 }
 
 .project .card .cardBottom h3 {
@@ -581,7 +616,7 @@ nav .burger div {
   position: absolute;
   bottom: 0;
   right: 0;
-  margin: 5px 10px;
+  margin: 5px 60px;
 }
 
 .project .card .cardBottom i:hover {
@@ -594,7 +629,7 @@ nav .burger div {
   position: absolute;
   bottom: 0;
   right: 0;
-  margin: 5px 60px;
+  margin: 5px 10px;
 }
 
 .project .card:hover {
@@ -631,20 +666,20 @@ nav .burger div {
   display: none;
 }
 
-.card #jayBoyce {
-  background-image: url(../images/jayBoyceScreenshot.png);
+.card #ftr {
+  background-image: url(../images/ftr.png);
 }
 
-.card #pokemon {
-  background-image: url(../images/pokemonScreenshot.png);
+.card #hiking {
+  background-image: url(../images/hikingGuide.png);
 }
 
-.card #basketball {
-  background-image: url(../images/basketballScreenshot.png);
+.card #media {
+  background-image: url(../images/mediaOutput.png);
 }
 
-.card #todo {
-  background-image: url(../images/todoScreenshot.png);
+.card #agt {
+  background-image: url(../images/agtWinners.png);
 }
 
 /************ MEDIA QUERIES ************/
