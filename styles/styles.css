@@ -682,6 +682,14 @@ nav .burger div {
   background-image: url(../images/agtWinners.png);
 }
 
+.card .headline {
+  color: #848484;
+}
+
+.card .cardInfo {
+  line-height: 25px;
+}
+
 /************ MEDIA QUERIES ************/
 /* 
 ##Device = Most of the Smartphones Mobiles (Portrait)
@@ -813,13 +821,14 @@ nav .burger div {
 }
 
 .contact .mail {
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 
 .contact .mail:hover {
   color: #dc4d41;
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
+  display: inline-block;
 }
 
 /************ MEDIA QUERIES ************/

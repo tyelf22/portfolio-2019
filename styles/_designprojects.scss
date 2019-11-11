@@ -1,6 +1,7 @@
 
 #designprojects {
     display: none;
+    
 }
  
     .card {
@@ -22,7 +23,19 @@
         #agt{
             background-image: url(../images/agtWinners.png);
 
-        }
+
+
+    }
+
+
+    .headline {
+        color: #848484
+    }
+
+    .cardInfo {
+        line-height: 25px;
+        
+    }
 
 
 }

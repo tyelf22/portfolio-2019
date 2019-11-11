@@ -36,13 +36,15 @@
     }
 
     .mail {
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
 
     .mail:hover {
         color: #dc4d41;
         transition: color 0.5s ease;
+        display: inline-block;
     }
+
 }
 
 
