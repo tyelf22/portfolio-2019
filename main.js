@@ -42,7 +42,8 @@ showCoding = () => {
     designBtn.style.background = "white"
     designBtn.style.color = "#14a098"
     codeBtn.style.background = "#14a098";
-    codeBtn.style.color = "white"
+    codeBtn.style.color = "white";
+    
 }
 
 showDesign = () => {
