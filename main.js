@@ -1,5 +1,3 @@
-console.log("tyson connected!");
-
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -55,3 +53,6 @@ showDesign = () => {
     codeBtn.style.color = "#14a098"
 
 }
+
+codeBtn.addEventListener('click', showCoding) //event listener for buttons
+designBtn.addEventListener('click', showDesign)
