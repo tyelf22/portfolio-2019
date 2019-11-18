@@ -81,7 +81,7 @@
         .cardBottom{
             color: black;
             background: white;
-            height: 300px;
+            height: 380px;
             position: relative;
             border-top: 2px solid $accentBlue;
 
@@ -180,8 +180,15 @@
     */
     
     @media (min-width: 768px) {
-    
-        //CSS
+        
+        .project {
+            .card {
+                .cardBottom{
+                    height: 300px;
+                }
+            }
+        }
+   
         
     
     

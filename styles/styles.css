@@ -587,7 +587,7 @@ nav .burger div {
 .project .card .cardBottom {
   color: black;
   background: white;
-  height: 300px;
+  height: 380px;
   position: relative;
   border-top: 2px solid #14a098;
 }
@@ -650,6 +650,12 @@ nav .burger div {
     ##Device = Tablets, Ipads (landscape)
     ##Screen = B/w 768px to 1024px
     */
+@media (min-width: 768px) {
+  .project .card .cardBottom {
+    height: 300px;
+  }
+}
+
 /* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
