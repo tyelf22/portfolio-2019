@@ -508,6 +508,7 @@ nav .burger div {
 .buttonStyling button {
   margin: 20px 20px 0 20px;
   padding: 10px;
+  width: 150px;
   font-family: "Raleway", sans-serif;
   background: white;
   color: #14a098;
