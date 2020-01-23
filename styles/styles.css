@@ -18,6 +18,7 @@ nav {
           align-items: center;
   height: 70px;
   background-color: #0b0c10;
+  z-index: 999;
 }
 
 nav .nav-links {
@@ -181,194 +182,166 @@ nav .burger div {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-}
+  /*     .bubbles {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+    }
 
-.jumboContainer .bubbles {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-}
+    .bubble {
+        position: absolute;
+        bottom: 0;
+        width: 10px;
+        height: 10px;
+        background: white;
+        border-radius: 50%;
+        opacity: 0.9;
+        animation: flying 10s infinite ease-in;
+    }
 
-.jumboContainer .bubble {
-  position: absolute;
-  bottom: 0;
-  width: 10px;
-  height: 10px;
-  background: white;
-  border-radius: 50%;
-  opacity: 0.9;
-  -webkit-animation: flying 10s infinite ease-in;
-          animation: flying 10s infinite ease-in;
-}
+    .bubble:nth-child(1) {
+        width: 7px;
+        height: 7px;
+        left: 10%;
+        animation-duration: 16s;
+        background: $accentBlue;
+    }
 
-.jumboContainer .bubble:nth-child(1) {
-  width: 7px;
-  height: 7px;
-  left: 10%;
-  -webkit-animation-duration: 16s;
-          animation-duration: 16s;
-  background: #14a098;
-}
+    .bubble:nth-child(2) {
+        width: 6px;
+        height: 6px;
+        left: 20%;
+        animation-duration: 20s;
+        
+    }
 
-.jumboContainer .bubble:nth-child(2) {
-  width: 6px;
-  height: 6px;
-  left: 20%;
-  -webkit-animation-duration: 20s;
-          animation-duration: 20s;
-}
+    .bubble:nth-child(3) {
+        width: 16px;
+        height: 16px;
+        left: 35%;
+        animation-duration: 25s;
+        background: $accentBlue;
+        
+    }
 
-.jumboContainer .bubble:nth-child(3) {
-  width: 16px;
-  height: 16px;
-  left: 35%;
-  -webkit-animation-duration: 25s;
-          animation-duration: 25s;
-  background: #14a098;
-}
+    .bubble:nth-child(4) {
+        width: 5px;
+        height: 5px;
+        left: 50%;
+        animation-duration: 40s;
+        animation-delay: 0s;
+    }
 
-.jumboContainer .bubble:nth-child(4) {
-  width: 5px;
-  height: 5px;
-  left: 50%;
-  -webkit-animation-duration: 40s;
-          animation-duration: 40s;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
+    .bubble:nth-child(5) {
+        width: 2px;
+        height: 2px;
+        left: 55%;
+        animation-duration: 35s;
+        background: $accentBlue;
+        
+    }
 
-.jumboContainer .bubble:nth-child(5) {
-  width: 2px;
-  height: 2px;
-  left: 55%;
-  -webkit-animation-duration: 35s;
-          animation-duration: 35s;
-  background: #14a098;
-}
+    .bubble:nth-child(6) {
+        width: 8px;
+        height: 8px;
+        left: 65%;
+        animation-duration: 11s;
+    }
 
-.jumboContainer .bubble:nth-child(6) {
-  width: 8px;
-  height: 8px;
-  left: 65%;
-  -webkit-animation-duration: 11s;
-          animation-duration: 11s;
-}
 
-.jumboContainer .bubble:nth-child(7) {
-  width: 10px;
-  height: 10px;
-  left: 75%;
-  -webkit-animation-duration: 31s;
-          animation-duration: 31s;
-  background: #14a098;
-}
+    .bubble:nth-child(7) {
+        width: 10px;
+        height: 10px;
+        left: 75%;
+        animation-duration: 31s;
+        background: $accentBlue;
+    }
 
-.jumboContainer .bubble:nth-child(8) {
-  width: 12px;
-  height: 12px;
-  left: 80%;
-  -webkit-animation-duration: 22s;
-          animation-duration: 22s;
-}
 
-.jumboContainer .bubble:nth-child(9) {
-  width: 9px;
-  height: 9px;
-  left: 70%;
-  -webkit-animation-duration: 18s;
-          animation-duration: 18s;
-  background: #14a098;
-}
+    .bubble:nth-child(8) {
+        width: 12px;
+        height: 12px;
+        left: 80%;
+        animation-duration: 22s;
+    }
 
-.jumboContainer .bubble:nth-child(10) {
-  width: 13px;
-  height: 13px;
-  left: 85%;
-  -webkit-animation-duration: 30s;
-          animation-duration: 30s;
-}
 
-.jumboContainer .bubble:nth-child(11) {
-  width: 10px;
-  height: 10px;
-  left: 10%;
-  -webkit-animation-duration: 40s;
-          animation-duration: 40s;
-  background: #F172a1;
-}
+    .bubble:nth-child(9) {
+        width: 9px;
+        height: 9px;
+        left: 70%;
+        animation-duration: 18s;
+        background: $accentBlue;
+    }
 
-.jumboContainer .bubble:nth-child(12) {
-  width: 7px;
-  height: 7px;
-  left: 25%;
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
-  background: #F172a1;
-}
+    .bubble:nth-child(10) {
+        width: 13px;
+        height: 13px;
+        left: 85%;
+        animation-duration: 30s;
+    }
 
-.jumboContainer .bubble:nth-child(13) {
-  width: 2px;
-  height: 2px;
-  left: 50%;
-  -webkit-animation-duration: 20s;
-          animation-duration: 20s;
-  background: #F172a1;
-}
+    .bubble:nth-child(11) {
+        width: 10px;
+        height: 10px;
+        left: 10%;
+        animation-duration: 40s;
+        background: $accentPink;
+    }
 
-.jumboContainer .bubble:nth-child(14) {
-  width: 5px;
-  height: 5px;
-  left: 75%;
-  -webkit-animation-duration: 35s;
-          animation-duration: 35s;
-  background: #F172a1;
-}
+    .bubble:nth-child(12) {
+        width: 7px;
+        height: 7px;
+        left: 25%;
+        animation-duration: 15s;
+        background: $accentPink;
+    }
 
-.jumboContainer .bubble:nth-child(15) {
-  width: 9px;
-  height: 9px;
-  left: 90%;
-  -webkit-animation-duration: 32s;
-          animation-duration: 32s;
-  background: #F172a1;
-}
+    .bubble:nth-child(13) {
+        width: 2px;
+        height: 2px;
+        left: 50%;
+        animation-duration: 20s;
+        background: $accentPink;
+    }
 
-@-webkit-keyframes flying {
-  0% {
-    bottom: -100px;
-    -webkit-transform: translateX(0);
+    .bubble:nth-child(14) {
+        width: 5px;
+        height: 5px;
+        left: 75%;
+        animation-duration: 35s;
+        background: $accentPink;
+    }
+
+    .bubble:nth-child(15) {
+        width: 9px;
+        height: 9px;
+        left: 90%;
+        animation-duration: 32s;
+        background: $accentPink;
+    }
+
+
+    @keyframes flying {
+        0%{
+            bottom: -100px;
             transform: translateX(0);
-  }
-  50% {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
-  }
-  100% {
-    bottom: 1080px;
-    -webkit-transform: translateX(-200px);
-            transform: translateX(-200px);
-  }
-}
 
-@keyframes flying {
-  0% {
-    bottom: -100px;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  50% {
-    -webkit-transform: translateX(100px);
+        }
+
+        50% {
             transform: translateX(100px);
-  }
-  100% {
-    bottom: 1080px;
-    -webkit-transform: translateX(-200px);
+        }
+
+        100%{
+            bottom: 1080px;
             transform: translateX(-200px);
-  }
+        }
+    } */
 }
 
 .name {

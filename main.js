@@ -54,3 +54,82 @@ showDesign = () => {
 
 codeBtn.addEventListener('click', showCoding) //event listener for buttons
 designBtn.addEventListener('click', showDesign)
+
+
+// particles
+
+const particles = [];
+
+function setup() {
+    let cnv = createCanvas(2000, 800);
+    cnv.position(0, 0)
+    
+    const particlesLength = Math.floor(window.innerWidth / 10);
+    
+    for(let i = 0; i < particlesLength; i++) {
+        particles.push(new Particle())
+    }
+
+}
+
+function draw() {
+    background('#0b0c10')
+    particles.forEach((p, index) => {
+        p.update();
+        p.draw();
+        p.checkParticles(particles.slice(index));
+    })
+}
+
+function windowResized() {
+    resizeCanvas(window.innerWidth, window.innerHeight)
+}
+
+class Particle {
+    constructor() {
+        // Position
+        this.pos = createVector(random(width), random(height));
+
+        //velocity
+        this.vel = createVector(random(-0.5, 0.5), random(-0.5, 0.5));
+
+        //size
+        this.size = 10;
+    }
+
+    // update movements by adding velocity
+    update() {
+        this.pos.add(this.vel);
+        this.edges();
+    }
+
+    //draw single particle
+    draw() {
+        noStroke()
+        fill('rgba(20, 160, 152, 0.7)') 
+        //fill('#14a098') 
+        circle(this.pos.x, this.pos.y, this.size);
+    }
+    
+    //detect edges
+    edges() {
+        if(this.pos.x < 0 || this.pos.x > width) {
+            this.vel.x *= -1
+        }
+        if(this.pos.y < 0 || this.pos.y > height) {
+            this.vel.y *= -1
+        }        
+    }
+
+    //connect particles
+    checkParticles(particles) {
+        particles.forEach(particle => {
+            const d = dist(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y)
+
+            if(d < 120){
+                stroke('rgba(255, 255, 255, 0.1)')
+                line(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y)
+            }
+        })
+    }
+}
