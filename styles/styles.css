@@ -2,6 +2,13 @@ body {
   overflow-x: hidden;
 }
 
+.wrapper {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+}
+
 nav {
   position: absolute;
   top: 0;
@@ -18,7 +25,7 @@ nav {
           align-items: center;
   height: 70px;
   background-color: #0b0c10;
-  z-index: 999;
+  z-index: 2000;
 }
 
 nav .nav-links {
@@ -181,7 +188,6 @@ nav .burger div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
   /*     .bubbles {
         position: absolute;
         width: 100%;
@@ -457,6 +463,12 @@ nav .burger div {
     ##Device = Tablets, Ipads (landscape)
     ##Screen = B/w 768px to 1024px
     */
+@media (min-width: 768px) {
+  .aboutContainer {
+    margin-top: 80px;
+  }
+}
+
 /* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px

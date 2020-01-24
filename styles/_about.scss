@@ -7,7 +7,8 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;  
-    padding: $padding-fix;  
+    padding: $padding-fix;
+    
 
 }
 
@@ -95,7 +96,9 @@
     
     @media (min-width: 768px) {
     
-        //CSS
+        .aboutContainer {
+            margin-top: 80px; 
+        }
         
     
     
@@ -108,7 +111,7 @@
     
     @media (min-width: 1024px) {
     
-        //CSS
+
         
     
     }

@@ -3,11 +3,26 @@ const navSlide = () => {//navigation menu
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
 
+    [burger, nav].forEach(item => {
+        item.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+    
+    navLinks.forEach((link, index) => {
+        if(link.style.animation){
+            link.style.animation = '';
+        } else {
+            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`
+        }
+    });
 
-burger.addEventListener('click', () => {
+    burger.classList.toggle('toggle');
+        })
+    })
+
+
+/* toggler.addEventListener('click', () => {
     nav.classList.toggle('nav-active');
-
-
+    
     navLinks.forEach((link, index) => {
         if(link.style.animation){
             link.style.animation = '';
@@ -20,12 +35,24 @@ burger.addEventListener('click', () => {
 
   });
 
+  nav.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+    
+    navLinks.forEach((link, index) => {
+        if(link.style.animation){
+            link.style.animation = '';
+        } else {
+            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`
+        }
+    });
+
+    burger.classList.toggle('toggle');
+
+  }); */
 
 }
 
-navSlide(); 
-
-
+navSlide();
 
 var codeSection = document.querySelector("#projects"); //declare variable for coding project section
 var styleSection = document.querySelector("#designprojects"); //declare variable for design project section
@@ -61,10 +88,10 @@ designBtn.addEventListener('click', showDesign)
 const particles = [];
 
 function setup() {
-    let cnv = createCanvas(2000, 800);
+    let cnv = createCanvas(window.innerWidth, window.innerHeight);
     cnv.position(0, 0)
     
-    const particlesLength = Math.floor(window.innerWidth / 10);
+    const particlesLength = Math.floor(window.innerWidth / 15);
     
     for(let i = 0; i < particlesLength; i++) {
         particles.push(new Particle())
@@ -82,8 +109,9 @@ function draw() {
 }
 
 function windowResized() {
-    resizeCanvas(window.innerWidth, window.innerHeight)
+    resizeCanvas(window.innerWidth, window.innerHeight); 
 }
+
 
 class Particle {
     constructor() {

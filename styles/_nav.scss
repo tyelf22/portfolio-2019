@@ -2,6 +2,13 @@ body {
     overflow-x: hidden;
 }
 
+.wrapper {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+}
+
 nav {
     position: absolute;
     top: 0;
@@ -12,9 +19,9 @@ nav {
     align-items: center;
     height: 70px;
     background-color: #0b0c10;
-    z-index: 999;
-
-
+    z-index: 2000;
+    
+    
     .nav-links {
         display: flex;
         z-index: 4;
@@ -123,6 +130,8 @@ nav {
             .nav-active {
                 transform: translateX(0%);
             }
+
+            
         }
 
 
