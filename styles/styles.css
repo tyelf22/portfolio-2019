@@ -352,7 +352,7 @@ nav .burger div {
 
 .name {
   white-space: nowrap;
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: center;
   letter-spacing: 3px;
   color: white;
@@ -380,6 +380,12 @@ nav .burger div {
 ##Device = Tablets, Ipads (landscape)
 ##Screen = B/w 768px to 1024px
 */
+@media (min-width: 768px) {
+  .name {
+    font-size: 4rem;
+  }
+}
+
 /* 
 ##Device = Tablets, Ipads (portrait)
 ##Screen = B/w 768px to 1024px
@@ -463,12 +469,6 @@ nav .burger div {
     ##Device = Tablets, Ipads (landscape)
     ##Screen = B/w 768px to 1024px
     */
-@media (min-width: 768px) {
-  .aboutContainer {
-    margin-top: 80px;
-  }
-}
-
 /* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px

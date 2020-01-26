@@ -175,11 +175,12 @@
 
 .name {
     white-space: nowrap;
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-align: center;
     letter-spacing: 3px;
     color: white;
     z-index: 3;
+    
 }
 
 .sub {
@@ -232,7 +233,9 @@
 
 @media (min-width: 768px) {
 
-    //CSS
+    .name {
+        font-size: 4rem;
+    }
 
 
 }
